@@ -2,5 +2,12 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "general": {
+    "general": "general",
+    "contact": "Contact",
+    "work": "Work Exp",
+    "edu": "Education",
+    "project": "Projects"
   }
 }

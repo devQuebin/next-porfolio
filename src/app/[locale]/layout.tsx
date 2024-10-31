@@ -23,7 +23,20 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           <Providers>
-            <Navbar />
+            <Navbar
+              defaultValue={locale}
+              items={[
+                {
+                  value: "es",
+                  label: "ES",
+                },
+                {
+                  value: "en",
+                  label: "EN",
+                },
+              ]}
+              label={"label"}
+            />
             {children}
             <Footer />
           </Providers>
