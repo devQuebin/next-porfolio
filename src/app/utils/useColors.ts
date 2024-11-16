@@ -1,8 +1,16 @@
+type TextType =
+  | "grey-default"
+  | "grey-subtitle"
+  | "default"
+  | "small"
+  | "subtitle"
+  | "title";
+
 const colorLight = { color: "black" };
 
 const colorDark = { color: "white" };
 
-export const useLight = (type: text_type, definedColor?: any) => {
+export const useLight = (type: TextType, definedColor?: string) => {
   switch (type) {
     case "grey-default":
       return { color: "gray.600" };
@@ -16,10 +24,12 @@ export const useLight = (type: text_type, definedColor?: any) => {
       return { color: definedColor ?? colorLight.color };
     case "title":
       return { color: definedColor ?? colorLight.color };
+    default:
+      return { color: colorLight.color }; // Agregar un caso por defecto opcional
   }
 };
 
-export const useDark = (type: text_type, definedColor?: any) => {
+export const useDark = (type: TextType, definedColor?: string) => {
   switch (type) {
     case "grey-default":
       return { color: "gray.400" };
@@ -33,5 +43,7 @@ export const useDark = (type: text_type, definedColor?: any) => {
       return { color: definedColor ?? colorDark.color };
     case "title":
       return { color: definedColor ?? colorDark.color };
+    default:
+      return { color: colorDark.color }; // Agregar un caso por defecto opcional
   }
 };
