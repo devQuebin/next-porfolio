@@ -13,6 +13,9 @@
     "edu": "Formación",
     "project": "Proyectos"
   },
+  "work": {
+    "work_title": "Experiencia Laboral"
+  },
   "404-page": {
     "title": "",
     "description": "",

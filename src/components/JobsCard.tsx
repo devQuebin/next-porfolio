@@ -12,7 +12,25 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-export default function JobsCard() {
+interface JobsProps {
+  title: string;
+  company: string;
+  from: string;
+  to: string;
+  detail1: string;
+  detail2?: string;
+  detail3?: string;
+}
+
+const JobsCard = ({
+  title,
+  company,
+  from,
+  to,
+  detail1,
+  detail2,
+  detail3,
+}: JobsProps) => {
   return (
     <Center py={6}>
       <Box
@@ -29,47 +47,37 @@ export default function JobsCard() {
           color={useColorModeValue("gray.800", "white")}
           align={"center"}
         >
-          <Text
-            fontSize={"sm"}
-            fontWeight={500}
-            bg={useColorModeValue("green.50", "green.900")}
-            p={2}
-            px={3}
-            color={"green.500"}
-            rounded={"full"}
-          >
-            Hobby
-          </Text>
-          <Stack direction={"row"} align={"center"} justify={"center"}>
-            <Text fontSize={"3xl"}>$</Text>
-            <Text fontSize={"6xl"} fontWeight={800}>
-              79
+          <Stack direction={"column"} align={"center"} justify={"center"}>
+            <Text fontSize={"6xl"} fontWeight={600}>
+              {title}
             </Text>
-            <Text color={"gray.500"}>/month</Text>
+            <Text fontSize={"2xl"} fontWeight={600}>
+              {company}
+            </Text>
           </Stack>
         </Stack>
 
-        <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={10}>
+        <Box bg={useColorModeValue("gray.100", "gray.900")} px={6} py={10}>
           <List spacing={3}>
+            <ListItem>From: {from}</ListItem>
+            <ListItem>To: {to}</ListItem>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />
-              5.000 page views
+              {detail1}
             </ListItem>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />
-              50 automation executions
+              {detail2}
             </ListItem>
             <ListItem>
               <ListIcon as={CheckIcon} color="green.400" />
-              50 identified users
-            </ListItem>
-            <ListItem>
-              <ListIcon as={CheckIcon} color="green.400" />
-              All features
+              {detail3}
             </ListItem>
           </List>
         </Box>
       </Box>
     </Center>
   );
-}
+};
+
+export default JobsCard;

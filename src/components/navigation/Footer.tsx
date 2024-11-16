@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import ThemedText from "../ThemedText";
 import { Link } from "../../i18n/routing";
 import { useTranslations } from "next-intl";

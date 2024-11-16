@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Front-End Developer",
+    "company": "Hedy Software",
+    "from": "2023-08",
+    "to": "Present",
+    "detail1": "Desarrollo interfaces de usuario utilizando React y Next.js.",
+    "detail2": "UX - UI Design con Figma",
+    "detail3": "Wordpress"
+  },
+  {
+    "title": "SR. Designer",
+    "company": "SumaPack",
+    "from": "2020-06",
+    "to": "2023-10",
+    "detail1": "Diseño industrial de prototipos y productos para Home Office.",
+    "detail2": "Marketing y ventas",
+    "detail3": "Coordinacion de la produccion"
+  },
+  {
+    "title": "Landing Pages",
+    "company": "Freelance",
+    "from": "2022-01",
+    "to": "2023-02",
+    "detail1": "Creacion y mantenimiento de sitios estaticos.",
+    "detail2": "React.js",
+    "detail3": "Bootstrap"
+  }
+]
