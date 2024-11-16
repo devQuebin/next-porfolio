@@ -12,6 +12,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
+import { useTranslations } from "next-intl";
 
 // Replace test data with your own
 // eslint-disable-next-line prefer-spread
@@ -24,14 +25,13 @@ const features = Array.apply(null, Array(8)).map(function (x, i) {
 });
 
 export default function Education() {
+  const t = useTranslations("edu");
   return (
-    <Box p={4} h="100vh">
+    <Box mt="9vh" h="58vh" mb={8}>
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>This is the headline</Heading>
+        <Heading mt={8}>{t("edu_title")}</Heading>
         <Text color={"gray.600"} fontSize={"xl"}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
+          {t("edu_subtitle")}
         </Text>
       </Stack>
 

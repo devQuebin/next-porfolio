@@ -14,13 +14,17 @@
     "project": "Proyectos"
   },
   "work": {
-    "work_title": "Experiencia Laboral"
+    "work_title": "Experiencia Laboral",
+    "work_subtitle": "Las siguientes experiencias laborales se encuentran actualizadas a la fecha 1/11/2024. Se estan listando las ultimas 3 experiencias."
+  },
+  "edu": {
+    "edu_title": "Estudios formales y cursos",
+    "edu_subtitle": "En esta seccion se listan los ultimos cursos, y estudios formales."
   },
   "404-page": {
-    "title": "",
-    "description": "",
-    "button": "",
-    "redirection": "",
-    "lala": "lala"
+    "title": "404 Pagina no encontrada",
+    "description": "Por favor, regresa a la pantalla inicial",
+    "button": "Volver",
+    "redirection": "Redireccionar a La pagina de inicio KEVIN MATSUDA"
   }
 }

@@ -18,6 +18,7 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -30,10 +31,16 @@ import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={8} centerContent overflow="hidden">
+    <Container
+      bg={useColorModeValue("red.50", "red.400")}
+      maxW="full"
+      mt="9vh"
+      centerContent
+      overflow="hidden"
+    >
       <Flex mt={8}>
         <Box
-          bg="#02054B"
+          bg="gray.500"
           color="white"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
