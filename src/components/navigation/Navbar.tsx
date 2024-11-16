@@ -11,7 +11,6 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  Text,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { HiTranslate } from "react-icons/hi";
