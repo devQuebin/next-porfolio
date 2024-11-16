@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import ThemedText from "../ThemedText";
 import { Link } from "../../i18n/routing";
 import { useTranslations } from "next-intl";
@@ -31,11 +31,12 @@ function Footer() {
         mt={{ base: 0, md: 3 }}
         gap={2}
       >
-        <Text>Kevin Matsuda {current_year}</Text>
+        <Heading color="white">Kevin Matsuda {current_year}</Heading>
         <ThemedText color={color} type="small">
-          <Link href="/privacy">Privacy Policy</Link> |{" "}
-          <Link href="/terms">Terms of Service</Link> |{" "}
-          <Link href="cookies">Cookies</Link>
+          <Link href="/eperience">{t("work")}</Link> |{" "}
+          <Link href="/education">{t("edu")}</Link> |{" "}
+          <Link href="/projects">{t("project")}</Link> |{" "}
+          <Link href="contact">{t("contact")}</Link>
         </ThemedText>
       </Flex>
       <Flex
@@ -47,17 +48,7 @@ function Footer() {
         borderLeftColor="white"
         pl={{ base: 0, md: 3 }}
         pt={{ base: 2, md: 0 }}
-      >
-        <ThemedText color={color} type="small">
-          Product
-        </ThemedText>
-        <ThemedText color="white" type="small">
-          <Link href="/faqs">FAQ</Link>
-        </ThemedText>
-        <ThemedText color="white" type="small">
-          <Link href="/contactus">{t("contact")}</Link>
-        </ThemedText>
-      </Flex>
+      ></Flex>
     </Flex>
   );
 }
