@@ -1,6 +1,22 @@
 {
   "HomePage": {
     "title": "Hello world!",
-    "about": "Go to the about page"
+    "hi": "Hi there! This is",
+    "about": "Front-end Developer | Designer | Teacher",
+    "about_text": "Desde niño que me gusta crear y diseñar cosas. Por eso asistí a una escuela técnica. Allí aprendí oficios como carpintería y herrería y también aprendí un poco de programación."
+  },
+  "general": {
+    "general": "general",
+    "contact": "Contact",
+    "work": "Work Exp",
+    "edu": "Education",
+    "project": "Projects"
+  },
+  "404-page": {
+    "title": "",
+    "description": "",
+    "button": "",
+    "redirection": "",
+    "lala": "lala"
   }
 }
