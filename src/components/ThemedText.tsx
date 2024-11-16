@@ -19,10 +19,13 @@ function ThemedText({
   type?: text_type;
   children: (string | JSX.Element | number)[] | string | JSX.Element;
 } & TextProps) {
+  const color =
+    typeof otherProps.color === "string" ? otherProps.color : undefined;
+
   return (
     <Text
-      _dark={useDark(type, otherProps.color)}
-      _light={useLight(type, otherProps.color)}
+      _dark={useDark(type, color)}
+      _light={useLight(type, color)}
       style={fontStyle[type]}
       {...otherProps}
     >

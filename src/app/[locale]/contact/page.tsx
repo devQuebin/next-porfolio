@@ -54,7 +54,7 @@ export default function Contact() {
               <WrapItem>
                 <Box>
                   <Heading>{t("contact_title")}</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color="white">
                     {t("contact_subtitle")}
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>

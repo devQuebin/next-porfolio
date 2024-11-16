@@ -3,7 +3,9 @@
     "title": "Hello world!",
     "hi": "Hi there! This is",
     "about": "Front-end Developer | Designer | Teacher",
-    "about_text": "Desde niño que me gusta crear y diseñar cosas. Por eso asistí a una escuela técnica. Allí aprendí oficios como carpintería y herrería y también aprendí un poco de programación."
+    "about_text": "Since I was a kid, I loved creating and designing stuffs. Thats why I decided to attend to a Technical high school, where I learn several skills such as wood working, electronics, blacksmith, and a bit of programming. I studied Industrial Design at the university and I learn my most valuable soft skills like team working, leadership, active listening, etc.",
+    "about_text2": "During my student period, I had lots of teachers that inspired me and discovered the beauty of teaching. Now I have 11 years of teaching experience in asignments like History, Design, and programming.",
+    "about_text3": "Like many of us, I used my time during the pandemy to study programming. Nowaday I work as a full stack developer, with Next.js and Nest.js, mainly with Typescript, and learning AWS to broaden my horizons."
   },
   "general": {
     "general": "general",
@@ -12,11 +14,30 @@
     "edu": "Education",
     "project": "Projects"
   },
+  "work": {
+    "work_title": "Working Experience",
+    "work_subtitle": "Last updated on 2024/11/1. For the moment, Im listing my last 3 experience, this page is under construction yet."
+  },
+  "edu": {
+    "edu_title": "Degrees, Posgrades and Courses",
+    "edu_subtitle": "In this sections you will find all my studies and formation up to date."
+  },
+  "project": {
+    "project_title": "Project title",
+    "project_subtitle": "Project subtitle"
+  },
+  "contact": {
+    "contact_title": "Contact",
+    "contact_subtitle": "Please fill up the contact form",
+    "location": " Rzeszów, Poland",
+    "name": "Name",
+    "msg": "Message",
+    "enviar": "Send Message"
+  },
   "404-page": {
-    "title": "",
-    "description": "",
-    "button": "",
-    "redirection": "",
-    "lala": "lala"
+    "title": "404 Page not found",
+    "description": "Please go back to Home Page",
+    "button": "Go Back",
+    "redirection": "Redirect to KEVIN MATSUDA main page"
   }
 }
