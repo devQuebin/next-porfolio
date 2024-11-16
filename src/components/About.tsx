@@ -21,6 +21,13 @@ export default function WithLargeQuote() {
       >
         {t("about_text")}
       </Text>
+      <Text
+        fontSize={{ base: "xl", md: "2xl" }}
+        textAlign={"center"}
+        maxW={"3xl"}
+      >
+        {t("about_text2")}
+      </Text>
     </Stack>
   );
 }

@@ -48,7 +48,7 @@ function Navbar({ defaultValue, items }: Props) {
       position="fixed"
       px={{ base: 2, sm: 10, md: 20 }}
       backdropFilter="blur(10px)"
-      bg="whiteAlpha.900"
+      bg="whiteAlpha.700"
       zIndex={1000}
     >
       <Link href="/">
