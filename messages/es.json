@@ -1,10 +1,10 @@
 {
   "HomePage": {
     "title": "hola world!",
-    "hi": "Hola a todxs! Yo soy",
+    "hi": "Hola a todxs! Soy",
     "about": "Desarrollador Front-end | Diseñador | Docente",
     "about_text": "Desde niño que me gusta crear y diseñar cosas. Por eso asistí a una escuela técnica. Allí aprendí oficios como carpintería y herrería y también aprendí un poco de programación. En la facultad estudié diseño industrial, donde adquirí la mayoría de mis habilidades blandas, como trabajo en equipo, coordinación de equipos, escucha activa, etc.",
-    "about_text2": "La pandemía, como a muchos, me sirvió para adentrarme en el mundo de la programación, la cual era una deuda pendiente. Hoy me encuentro trabajo como desarrollador Full Stack, con Next.js y Nest.js, principalmente con el lenguaje Typescript, y estoy aprendiendo sobre AWS para ampliar mis conocimientos."
+    "about_text2": "La pandemía, como a muchos, me sirvió para adentrarme en el mundo de la programación, la cual era una deuda pendiente. Hoy me encuentro trabajando como desarrollador Full Stack, con Next.js y Nest.js, principalmente con el lenguaje Typescript, y estoy aprendiendo sobre AWS para ampliar mis conocimientos."
   },
   "general": {
     "general": "general",
@@ -20,6 +20,18 @@
   "edu": {
     "edu_title": "Estudios formales y cursos",
     "edu_subtitle": "En esta seccion se listan los ultimos cursos, y estudios formales."
+  },
+  "project": {
+    "project_title": "Project title",
+    "project_subtitle": "Project subtitle"
+  },
+  "contact": {
+    "contact_title": "Contact",
+    "contact_subtitle": "Por favor completar el formulario",
+    "location": " Rzeszow, Polonia",
+    "name": "Nombre",
+    "msg": "Mensaje",
+    "enviar": "Enviar mensaje"
   },
   "404-page": {
     "title": "404 Pagina no encontrada",

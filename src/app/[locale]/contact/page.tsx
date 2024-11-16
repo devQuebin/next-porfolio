@@ -27,9 +27,12 @@ import {
   MdFacebook,
   MdOutlineEmail,
 } from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Contact() {
+  const t = useTranslations("contact");
   return (
     <Container
       bg={useColorModeValue("red.50", "red.400")}
@@ -50,9 +53,9 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact</Heading>
+                  <Heading>{t("contact_title")}</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact
+                    {t("contact_subtitle")}
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -62,10 +65,9 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}
+                        leftIcon={<MdPhone color="gray.800" size="20px" />}
                       >
-                        +91-988888888
+                        +48-988888888
                       </Button>
                       <Button
                         size="md"
@@ -73,10 +75,9 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        leftIcon={<MdEmail color="gray.800" size="20px" />}
                       >
-                        hello@abc.com
+                        matsuda.m.kevin@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -84,10 +85,9 @@ export default function Contact() {
                         width="200px"
                         variant="ghost"
                         color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdLocationOn color="#1970F1" size="20px" />}
+                        leftIcon={<MdLocationOn color="gray.800" size="20px" />}
                       >
-                        Karnavati, India
+                        {t("location")}
                       </Button>
                     </VStack>
                   </Box>
@@ -97,30 +97,36 @@ export default function Contact() {
                     px={5}
                     alignItems="flex-start"
                   >
-                    <IconButton
-                      aria-label="facebook"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<MdFacebook size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="github"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<BsGithub size="28px" />}
-                    />
-                    <IconButton
-                      aria-label="discord"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: "#0D74FF" }}
-                      icon={<BsDiscord size="28px" />}
-                    />
+                    <Link href="https://www.facebook.com/ke.matsuda/">
+                      <IconButton
+                        aria-label="facebook"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<MdFacebook size="28px" />}
+                      />
+                    </Link>
+                    <Link href="https://github.com/devQuebin">
+                      <IconButton
+                        aria-label="github"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<BsGithub size="28px" />}
+                      />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/matsudamkevin/">
+                      <IconButton
+                        aria-label="linkedin"
+                        variant="ghost"
+                        size="lg"
+                        isRound={true}
+                        _hover={{ bg: "#0D74FF" }}
+                        icon={<BsLinkedin size="28px" />}
+                      />
+                    </Link>
                   </HStack>
                 </Box>
               </WrapItem>
@@ -129,7 +135,7 @@ export default function Contact() {
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
                       <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
+                        <FormLabel>{t("name")}</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
                             <BsPerson color="gray.800" />
@@ -147,23 +153,23 @@ export default function Contact() {
                         </InputGroup>
                       </FormControl>
                       <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>{t("msg")}</FormLabel>
                         <Textarea
                           borderColor="gray.300"
                           _hover={{
                             borderRadius: "gray.300",
                           }}
-                          placeholder="message"
+                          placeholder={t("msg")}
                         />
                       </FormControl>
                       <FormControl id="name" float="right">
                         <Button
                           variant="solid"
-                          bg="#0D74FF"
+                          bg="gray.500"
                           color="white"
                           _hover={{}}
                         >
-                          Send Message
+                          {t("enviar")}
                         </Button>
                       </FormControl>
                     </VStack>
